@@ -1,2 +1,0 @@
-#!/bin/bash
-gllcc -E -o c $CFILE
