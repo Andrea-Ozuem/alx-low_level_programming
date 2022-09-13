@@ -2,6 +2,7 @@
 
 /**
 *print_alphabet - print alphabet
+*Return: 1
 */
 void print_alphabet_x10(void)
 {
