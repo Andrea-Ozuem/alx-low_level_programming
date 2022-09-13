@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- *print_to_98
+ *print_to_98 - print to
  *@n: inpuy
  */
 void print_to_98(int n)
@@ -29,5 +29,5 @@ void print_to_98(int n)
 	}
 	else
 		printf("%d", 98);
-      	printf("\n");
+	printf("\n");
 }
