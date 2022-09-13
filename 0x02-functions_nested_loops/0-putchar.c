@@ -2,7 +2,7 @@
 
 /**
 *main - entry pont
-*Return value: 0
+*Return: 0
 */
 int main(void)
 {
