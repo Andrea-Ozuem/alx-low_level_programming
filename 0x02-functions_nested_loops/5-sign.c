@@ -5,7 +5,6 @@
  *@n: num t check
  *Return: 1 as +, 0 as non
  */
-
 int print_sign(int n)
 {
 	if (n < 0)
