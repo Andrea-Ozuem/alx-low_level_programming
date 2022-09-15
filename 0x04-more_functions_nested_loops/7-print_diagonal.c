@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_diagonale - print - n times
+ * print_diagonal - print - n times
  * @n: no of times _ should be printed
  */
 void print_diagonal(int n)
