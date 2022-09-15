@@ -16,5 +16,6 @@ int main(void)
 	 print_diagonal(10);
 	 printf("%s\n", s);
 	 print_diagonal(-4);
+	 print_diagonal(4);
 	 return (0);
 }
