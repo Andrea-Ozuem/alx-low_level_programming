@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * print_line - print - n times
- * @n: no of times - should be printed
+ * print_diagonale - print - n times
+ * @n: no of times _ should be printed
  */
 void print_diagonal(int n)
 {
