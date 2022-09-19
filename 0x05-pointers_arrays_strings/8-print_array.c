@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
-  *print_arrat - print array
+  *print_array - print array
   *@a: array
   *@n: no of wlwments
   */
@@ -12,9 +12,11 @@ void print_array(int *a, int n)
 
 	for (i = 0; i < n; i++)
 	{
-		if (i == n - 1)
+		if (n <= 0)
+			printf("\n");
+		else if (i == n - 1)
 			printf("%i\n", a[i]);
-		else
+		else if (i < n)
 			printf("%i, ", a[i]);
 	}
 }
