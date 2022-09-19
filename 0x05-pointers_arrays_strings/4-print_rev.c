@@ -1,5 +1,5 @@
 #include "main.h"
-i
+
 /**
 *print_rev - print str in reverse order
 *@s: string
