@@ -4,6 +4,7 @@
   *_strcpy - copose str1 to str2
   *@dest: destination str
   *@src: src sting
+  *Return: pointer to str
   */
 char *_strcpy(char *dest, char *src)
 {
