@@ -1,6 +1,7 @@
 #ifndef MATHEMATICS_H
 #define MATHEMATICS_H
 
+void print_array(int *a, int n);
 int _putchar(char c);
 void reset_to_98(int *n);
 void swap_int(int *a, int *b);
