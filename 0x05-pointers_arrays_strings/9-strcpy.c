@@ -7,6 +7,8 @@
   */
 char *_strcpy(char *dest, char *src)
 {
+	if (dest == NULL)
+		return NULL;
 	int len;
 	char *ptr = dest;
 	while (src[len] != '\0')
