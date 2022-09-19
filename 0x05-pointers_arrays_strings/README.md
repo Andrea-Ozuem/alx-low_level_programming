@@ -1,0 +1,1 @@
+Files containing pointer, arrays and strings
