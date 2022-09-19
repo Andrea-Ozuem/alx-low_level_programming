@@ -5,7 +5,7 @@
 *@s: string to findlenght
 *Return: str lenght til \0
 */
-int _strlen(char *s);
+int _strlen(char *s)
 {
     int count;
 
