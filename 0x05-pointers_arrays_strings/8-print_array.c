@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
   *print_arrat - print array
@@ -12,7 +13,7 @@ void print_array(int *a, int n)
 	for (i = 0; i < n; i++)
 	{
 		if (i == n - 1)
-			printf("i\n", i);
+			printf("%i\n", i);
 		else
 			printf("%i, ", a[i]);
 	}
