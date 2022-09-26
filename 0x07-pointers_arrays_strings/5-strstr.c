@@ -3,26 +3,6 @@
 #include <stddef.h>
 
 /**
-  *compare -checks if 2 str are same
-  *@X: first
-  *@Y: seconf
-  *Return: 0 as false
-  */
-int compare(const char *X, const char *Y)
-{
-	while (*X && *Y)
-	{
-		if (*X != *Y)
-		{
-			return (0);
-		}
-		X++;
-		Y++;
-	}
-	return (*Y == '\0');
-}
-
-/**
   *_strstr - locates substring in str
   *@haystack: str
   *@needle: substring
@@ -32,7 +12,15 @@ char *_strstr(char *haystack, char *needle)
 {
 	while (*haystack != '\0')
 	{
-		if ((*haystack == *needle) && compare(haystack, needle))
+		char *one = haystack;
+		char *two = needle;
+
+		while (*one == *two && *two != '\0')
+		{
+			one++;
+			two++;
+		}
+		if (*two == '\0')
 			return (haystack);
 		haystack++;
 	}
