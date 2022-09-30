@@ -35,7 +35,7 @@ int main(int argc, char *argv[])
 	two = floor(cents / 2);
 	cents = cents - two * 2;
 
-	pennies = calculate_pennies(cents);
+	pennies = floor(cents / 1);
 	cents = cents - pennies * 1;
 
 	coins = quarters + dimes + nickels + two + pennies;
@@ -81,17 +81,4 @@ int calculate_nickels(int cents)
 
 	nickels = floor(cents / 5);
 	return (nickels);
-}
-
-/**
-  *calculate_pennies - calcs pennies
-  *@cents: input
-  *Return: pennies
-  */
-int calculate_pennies(int cents)
-{
-	int pennies;
-
-	pennies = floor(cents / 1);
-	return (pennies);
 }
