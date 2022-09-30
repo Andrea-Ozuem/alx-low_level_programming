@@ -53,7 +53,7 @@ int calculate_quarters(int cents)
 {
 	int quarters;
 
-	quaters = floor(cents / 25);
+	quarters = floor(cents / 25);
 	return (quarters);
 }
 
