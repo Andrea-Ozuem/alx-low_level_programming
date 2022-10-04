@@ -24,14 +24,14 @@ int main(void)
 {
 	    int **grid;
 
-	        grid = alloc_grid(48, 32);
+	        grid = alloc_grid(6, 4);
 		    if (grid == NULL)
 			        {
 					        return (1);
 						    }
-		        print_grid(grid,48, 32);
+		        print_grid(grid, 6, 4);
 			    printf("\n");
 
-				        print_grid(grid, 48, 32);
+				        print_grid(grid, 6, 4);
 					    return (0);
 }
