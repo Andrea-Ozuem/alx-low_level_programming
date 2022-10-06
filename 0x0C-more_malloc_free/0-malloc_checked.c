@@ -4,6 +4,7 @@
 /**
   *malloc_checked - allocates memory using malloc and checks for NULL
   *@b: no of bytes
+  *Return: pointer to memory location
   */
 void *malloc_checked(unsigned int b)
 {
