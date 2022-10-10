@@ -3,7 +3,7 @@
 /**
   *new_dog - creates a new fog
   *@name: name
-  *@age: age 
+  *@age: age
   *@owner: of dog
   *Return: new dog
   */
@@ -22,7 +22,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		;
 	for (newowner = 0; owner[newowner]; newowner++)
 		;
-	
+
 	n_dog->name = malloc(newname + 1);
 	n_dog->owner = malloc(newowner + 1);
 	if (!n_dog->name || !n_dog->owner)
@@ -34,7 +34,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	}
 	n_dog->age  = age;
 
-	for (i = 0; i < newname;i++)
+	for (i = 0; i < newname; i++)
 		n_dog->name[i] = name[i];
 	n_dog->name[i] = '\0';
 
