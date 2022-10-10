@@ -1,5 +1,9 @@
 #include <stdio.h>
 
+/**
+  *main - prints filename
+  *Return: 0 to indicate sucees otherwise nonzero dogot
+  */
 int main(void)
 {
 	printf("%s\n", __FILE__);
