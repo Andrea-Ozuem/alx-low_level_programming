@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
-  *get_op_func -  selects the correct function to perform the operation asked by the user
+  *get_op_func - selects the correct function for operation
   *@s: operator
   *Return: opeator funtion
   */
@@ -19,12 +19,11 @@ int (*get_op_func(char *s))(int, int)
 	int i;
 
 	i = 0;
-	/*while ((s != ops[i++][0]) && (i < 5))
-	if (i >= 5)*/
-	while (i < 6)
+	while (ops[i].op)
 	{
-		if (s == ops[i].op)
+		if (*s == *(ops[i].op))
 			return (ops[i].f);
+		i++;
 	}
 	return (NULL);
-}	
+}
