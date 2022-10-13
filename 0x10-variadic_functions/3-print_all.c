@@ -24,21 +24,23 @@ void print_all(const char * const format, ...)
 			case 's':
 				s = va_arg(ap, char *);
 				if (s == NULL)
+				{
 					printf("(nil)");
-				else
-					printf("%s, ", s);
+					break;
+				}				
+				printf("%s", s);
 				break;
 			case 'i':
 				i = va_arg(ap, int);
-				printf("%d, ", i);
+				printf("%d", i);
 				break;
 			case 'f':
 				f = va_arg(ap, double);
-				printf("%f, ", f);
+				printf("%f", f);
 				break;
 			case 'c':
 				c = (char) va_arg(ap, int);
-				printf("%c, ", c);
+				printf("%c", c);
 				break;
 		}
 	}
