@@ -19,7 +19,7 @@ int main(int argc, char **argv)
 	}
 
 	fd_r = open(argv[1], O_RDONLY);
-	fd_w = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 00664);
+	fd_w = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC | O_APPEND, 0664);
 	if (fd_r == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
