@@ -1,10 +1,13 @@
-#include "try.h"
+#include "main.h"
 #include <stdio.h>
+
+/**
+ * main - check the code
+ *
+ * Return: Always EXIT_SUCCESS.
+ */
 int main(void)
 {
-	int a = 5;
-	int b = 8;
-
-	printf("%i\n", sub(a, b));
-	return (0);
+    printf("%d\n", _strlen("My Dyn Lib"));
+    return (0);
 }
