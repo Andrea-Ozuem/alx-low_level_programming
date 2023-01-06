@@ -6,7 +6,6 @@
   */
 void free_node(hash_node_t *node)
 {
-	printf("Freeing %s: %s\n", node->key, node->value);
 	free(node->key);
 	free(node->value);
 	free(node);
