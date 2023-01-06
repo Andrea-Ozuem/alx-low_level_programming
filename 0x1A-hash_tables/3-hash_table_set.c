@@ -2,6 +2,17 @@
 #include <string.h>
 
 /**
+  *free_node - frees a node
+  *@node: node to be freed
+  */
+void free_node(hash_node_t *node)
+{
+	free(node->key);
+	free(node->value);
+	free(node);
+}
+
+/**
   *create_node - creates new node for ht
   *@key: key
   *@value: value of key i.e key: value

@@ -18,6 +18,5 @@ int main(void)
     hash_table_set(ht, "depravement", "depraver");
     hash_table_set(ht, "mentioner", "colted");
     hash_table_set(ht, "serafins", "serer");
-    hash_table_print(ht);
     return (EXIT_SUCCESS);
 }
