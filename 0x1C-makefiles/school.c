@@ -2,7 +2,7 @@
 
 /**
  * print_school
- *
+ * ok
  * Return: Nothing
  */
 void print_school(void)
