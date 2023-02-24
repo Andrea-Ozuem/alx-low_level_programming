@@ -9,7 +9,7 @@ all: $(OBJ)
 
 .PHONY: clean oclean fclean re all
 
-re: clean all
+re: oclean all
 
 fclean: clean oclean
 	
