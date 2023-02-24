@@ -2,7 +2,7 @@ CC = gcc
 CFLAGS = -Wall -Werror -Wextra -pedantic
 NAME = school
 SRC = main.c school.c
-OBJ := $(SRC:%.c=%.o)
+OBJ = $(SRC:%.c=%.o)
 
 all: $(OBJ)
 	$(CC) $(CFLAGS) $(OBJ) -o $(NAME)	
