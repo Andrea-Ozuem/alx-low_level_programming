@@ -1,10 +1,11 @@
 CC = gcc
+CFLAGS = -Wall -Werror -Wextra -pedantic
 NAME = school
 SRC = main.c school.c
 OBJ := $(SRC:%.c=%.o)
 
 all: $(OBJ)
-	$(CC) $(OBJ) -o $(NAME)	
+	$(CC) $(CFLAGS) $(OBJ) -o $(NAME)	
 
 .PHONY: clean oclean fclean re all
 
